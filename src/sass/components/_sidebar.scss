@@ -1,0 +1,35 @@
+@use "../util/" as *;
+
+.sidebar {
+  display: none;
+}
+@media only screen and (min-width: 730px) {
+  .sidebar {
+    display: block;
+    // width: 45px;
+    // height: 170px;
+    background-color: $orange;
+    position: sticky;
+    top: 250px;
+    & ul {
+      padding: 10px;
+    }
+
+    & li:last-child {
+      padding-bottom: 0;
+    }
+    & li {
+      padding-bottom: 10px;
+      & a img {
+        width: 20px;
+      }
+    }
+  }
+
+  .sidebar--container {
+    position: absolute;
+    // width: 5%;
+    height: 100vh;
+    z-index: 999;
+  }
+}

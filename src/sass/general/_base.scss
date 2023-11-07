@@ -1,0 +1,17 @@
+@use "../util/" as *;
+
+//layout
+
+
+//information
+
+.notification {
+  color: $green;
+  border-color: $light-gray;
+  border-style: solid;
+  background-color: $light-gray;
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}

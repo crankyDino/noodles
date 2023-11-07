@@ -1,0 +1,30 @@
+@use "../util/" as *;
+
+.navbar {
+  padding:0 $base-padding ;
+  // box-shadow: $base-box-shadow;
+  justify-content: space-between;
+
+  .site-title {
+    font-size: $font-size-lg;
+  }
+
+  & .navbar--options {
+    justify-content: space-evenly;
+    margin: auto 0;
+    & .navbar--item {
+      padding: 0 10px;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.navbar--item {
+}
+
+@media only screen and (min-width: 1100px) {
+  .navbar--container {
+    max-width: 90vw;
+    margin: auto;
+  }
+}

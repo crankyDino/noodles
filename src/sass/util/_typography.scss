@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+span {
+  font-family: var(--font-primary);
+  text-decoration: none;
+  color: $black;
+}
+
+h1 {
+  color: $orange;
+  border: 0;
+  background-color: $light-gray;
+  margin-bottom: $base-margin;
+}

@@ -1,0 +1,81 @@
+@use "./variables" as *;
+
+@each $clr, $val in $palette {
+  .#{$clr} {
+    color: $val;
+  }
+
+  .#{$clr}-hover {
+    &:hover {
+      color: $val;
+    }
+  }
+
+  .bg-#{$clr} {
+    background-color: $val;
+  }
+
+  .bg-#{$clr}-hover {
+    &:hover {
+      background-color: $val;
+    }
+  }
+
+  @if ($val != black and $val != white) {
+    //light
+    @for $i from 1 through 5 {
+      .#{$clr}-light-#{$i} {
+        color: mix(white, $val, $i * 10);
+      }
+
+      .#{$clr}-light-hover-#{$i} {
+        &:hover {
+          color: mix(white, $val, $i * 10);
+        }
+      }
+
+      .bg-#{$clr}-light-#{$i} {
+        background-color: mix(white, $val, $i * 10);
+      }
+
+      .bg-#{$clr}-light-hover-#{$i} {
+        &:hover {
+          background-color: mix(white, $val, $i * 10);
+        }
+      }
+    }
+
+    //dark side
+    @for $i from 1 through 5 {
+      .#{$clr}-dark-#{$i} {
+        color: mix(black, $val, $i * 10);
+      }
+
+      .#{$clr}-dark-hover-#{$i} {
+        &:hover {
+          color: mix(black, $val, $i * 10);
+        }
+      }
+
+      .bg-#{$clr}-dark-#{$i} {
+        background-color: mix(black, $val, $i * 10);
+      }
+
+      .bg-#{$clr}-dark-hover-#{$i} {
+        &:hover {
+          background-color: mix(black, $val, $i * 10);
+        }
+      }
+    }
+  }
+}
+
+@each $clr, $val in $status {
+  .#{$clr} {
+    color: #{$val};
+  }
+
+  .bg-#{$clr} {
+    background-color: #{$val};
+  }
+}
