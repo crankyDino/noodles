@@ -9,6 +9,7 @@ $red: darkred !default;
 $light-red: salmon !default;
 $orange: #e77236 !default;
 $blue: #326dee !default;
+$pink: #ffd7ba !default;
 
 //theme
 $status: (
@@ -30,28 +31,32 @@ $palette: (
   "gray": #808080,
   "black": $black,
   "white": $white,
+  "pink": $pink,
 );
 
 //sizing
-$base-width: 80vw;
+$base-width: 80vw !default;
+$min-width: 16px !default;
+$base-height: 80vh !default;
+$min-height: 16px !default;
 
 // spacing
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
 
 // borders
-$base-border-thickness: 1px;
-$base-border-radius: 20px;
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // font sizes
-$base-font-size: 1rem;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.5;
-$font-size-xl: $base-font-size * 2;
-$font-size-xxl: $base-font-size * 3;
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
 
 $breakpoints: (
   "xs": 0,
@@ -62,6 +67,28 @@ $breakpoints: (
 );
 
 $utilities: (
+  "width": (
+    "prefix": "w",
+    "values": (
+      "0": 0,
+      "1": $min-width,
+      "2": $min-width * 2,
+      "3": $min-width * 4,
+      "4": $min-width * 6,
+      "5": $min-width * 8,
+    ),
+  ),
+  "height": (
+    "prefix": "h",
+    "values": (
+      "0": 0,
+      "1": $min-height,
+      "2": $min-height * 2,
+      "3": $min-height * 4,
+      "4": $min-height * 6,
+      "5": $min-height * 8,
+    ),
+  ),
   "padding": (
     "prefix": "p",
     "values": (
@@ -200,13 +227,13 @@ $utilities: (
     ),
   ),
   "display": (
-    "prefix": "display",
+    "prefix": "d",
     "values": (
-      "n": none,
-      "b": block,
-      "f": flex,
-      "i": inline,
-      "i-b": inline-block,
+      "none": none,
+      "block": block,
+      "flex": flex,
+      "inline": inline,
+      "inline-block": inline-block,
     ),
   ),
   "font-size": (

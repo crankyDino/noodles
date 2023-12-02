@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Hanuman:wght@300;400;900&family=Montserrat:wght@200;300;400;900&family=Space+Mono:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Chintzy";
+  src: url("../assets/fonts/Chintzy/chintzy.ttf") format("truetype");
+}
+
+$font-primary: "Space Mono" !default;
+$font-secondary: "Hanuman" !default;
+$font-terminal: "Comic Neue" !default;
+$font-tertiary: "Montserrat" !default;
+$font-chintzy: "Chintzy" !default;
+// :root {
+//   --font-primary: "Space Mono";
+//   --font-secondary: "Hanuman";
+//   --font-terminal: "Comic Neue";
+//   --font-tertiary: "Montserrat";
+//   --font-chintzy: "Chintzy";
+// }
+// $fonts:(
+
+// )
