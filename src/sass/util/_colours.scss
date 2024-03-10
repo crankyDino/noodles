@@ -25,22 +25,22 @@
     //light
     @for $i from 1 through 5 {
       .#{$clr}-light-#{$i} {
-        color: mix(white, $val, $i * 10);
+        color: mix(white, $val, $i * 1%);
       }
 
       .#{$clr}-light-hover-#{$i} {
         &:hover {
-          color: mix(white, $val, $i * 10);
+          color: mix(white, $val, $i * 1%);
         }
       }
 
       .bg-#{$clr}-light-#{$i} {
-        background-color: mix(white, $val, $i * 10);
+        background-color: mix(white, $val, $i * 1%);
       }
 
       .bg-#{$clr}-light-hover-#{$i} {
         &:hover {
-          background-color: mix(white, $val, $i * 10);
+          background-color: mix(white, $val, $i * 1%);
         }
       }
     }
